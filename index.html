@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="search">
+          <input type="text" id="weatherLocation" placeholder="enter location" />
+          <button id="searchbutton"><img src="images/search.png" alt="" /></button>
+        </div>
+        <div id="weather">
+          <img src="images/clouds.png" alt="" />
+          <div class="temp"><h1>°C</h1></div>
+          <div class="location"><h2>Location</h2></div>
+          <div class="more-data" id="min-max">
+            <div class="mintemp">
+              <h2>min: °C</h2>
+            </div>
+            <div class="maxtemp">
+              <h2>max: °C</h2>
+            </div>
+          </div>
+          <div class="more-data">
+            <img src="images/wind.png" alt="" />
+            <div class="windspeed">
+              <h2>km/uur</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
