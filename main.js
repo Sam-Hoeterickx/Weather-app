@@ -10,7 +10,7 @@ let imgUrl;
 init();
 
 function init () {
-    getLocation();  
+    onSearchLocation();  
     fetchURL(location);
 }
 function fetchURL (city) {
@@ -48,7 +48,7 @@ function renderWeather () {
     }
 }
 
-function getLocation () {
+function onSearchLocation () {
     document.querySelector('#searchbutton').addEventListener('click', function () {
         location = document.querySelector('#weatherLocation').value;
         fetchURL(location);
