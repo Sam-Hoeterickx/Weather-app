@@ -18,3 +18,6 @@ API - Steps
 - Style the HTML
 - Change weather icon to the according weather data
 - Add geolocation of device to standard location
+
+API - key
+- 81008b55b627b2df0efdfec719e78c88

@@ -2,7 +2,7 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 const apiKey = '81008b55b627b2df0efdfec719e78c88';
 const weatherIcon = document.querySelector('.image');
 let weather;
-let location;
+let location = "Brussel" ;
 let imgUrl;
 
 
@@ -10,7 +10,8 @@ let imgUrl;
 init();
 
 function init () {
-    getLocation();   
+    getLocation();  
+    fetchURL(location);
 }
 function fetchURL (city) {
     fetch(apiUrl + city + `&appid=${apiKey}`)
